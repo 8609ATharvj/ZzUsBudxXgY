@@ -37,7 +37,7 @@ jobs:
           username: fmeringdal
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Push
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v6
         with:
           context: ./frontend
           file: ./frontend/docker/Dockerfile
